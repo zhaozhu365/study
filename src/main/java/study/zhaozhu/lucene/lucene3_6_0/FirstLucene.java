@@ -6,7 +6,7 @@
 * @powered by 北京萝卜科技有限公司
 * @version V1.0   
 */
-package study.zhaozhu.lucene;
+package study.zhaozhu.lucene.lucene3_6_0;
 
 import java.io.File;
 
