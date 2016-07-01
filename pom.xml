@@ -77,7 +77,15 @@
 			<artifactId>lucene-queryparser</artifactId>
 			<version>3.6.0</version>
 		</dependency>
-		
+
+		<!-- ######elasticsearch相关###### -->
+		<!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>2.3.3</version>
+		</dependency>
+
 		<!-- ######commons相关###### -->
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
