@@ -54,6 +54,14 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- ###### elasticsearch 相关==与lucene冲突 ###### -->
+		<!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>2.3.3</version>
+		</dependency>
+
 		<!-- ###### lucene相关 ###### -->
 		<!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->
 		<!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers -->
@@ -79,11 +87,6 @@
 			<artifactId>lucene-queryparser</artifactId>
 			<version>3.6.0</version>
 		</dependency> -->
-
-		<!-- ###### elasticsearch 相关 ###### -->
-		<!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
-		<dependency> <groupId>org.elasticsearch</groupId> <artifactId>elasticsearch</artifactId> 
-			<version>2.3.3</version> </dependency>
 
 		<!-- ###### commons相关 ###### -->
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
