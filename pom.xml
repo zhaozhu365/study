@@ -13,7 +13,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	
+	
+	<!-- ############################## repositories #################################### -->
 	<repositories>
 		<repository>
 			<id>oschina</id>
@@ -44,7 +46,8 @@
 			<url>http://gradle.artifactoryonline.com/gradle/libs</url>
 		</repository>
 	</repositories>
-
+	
+	<!-- ############################## dependencies ############################## -->
 	<dependencies>
 		<!-- ###### junit ###### -->
 		<dependency>
