@@ -29,11 +29,14 @@ public class FirstElasticSearch {
 		
 		try {
 //			Client client = TransportClient.builder().settings(settings).build();
+//			Client client = TransportClient.builder().build()
+//					.addTransportAddress(new InetSocketTransportAddress(InetAddress.getLocalHost(), 9300));
 			Client client = TransportClient.builder().build()
-					.addTransportAddress(new InetSocketTransportAddress(InetAddress.getLocalHost(), 9300));
+					.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("localhost"), 9300));
 			System.out.println(client);
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
+			System.out.println("ElasticSearch client init fialed!");
 		}
 
 	}
