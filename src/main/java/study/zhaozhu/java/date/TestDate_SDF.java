@@ -32,6 +32,11 @@ public class TestDate_SDF {
 			System.out.println(getWeekOfDate(str));
 		}
 		System.out.println(getWeekOfDate(""));
+		
+		String d1 = convertQueryDay("今天");
+		String[] d1s = d1.split("-");
+		String temp = d1s[0] + "年" + Integer.parseInt(d1s[1]) + "月" + Integer.parseInt(d1s[2]);
+		System.out.println(temp);
 	}
 
 	 /**
