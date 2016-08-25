@@ -25,10 +25,12 @@ public class TestString {
 		String content = "我叫我叫小萝卜";
 		
 		if (content.contains("我是")) {
+			System.out.println(content.lastIndexOf("我是"));
 			String name = content.substring(2 + content.lastIndexOf("我是"), content.length());
 			System.out.println(name);
 		}
 		if (content.contains("我叫")) {
+			System.out.println(content.lastIndexOf("我叫"));
 			String name =  content.substring(2 + content.lastIndexOf("我叫"), content.length());
 			System.out.println(name);
 		}
