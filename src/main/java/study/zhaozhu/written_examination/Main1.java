@@ -3,7 +3,7 @@ package study.zhaozhu.written_examination;
 import java.util.Scanner;
 
 /**
- * 
+ * 网易2016校招笔试：
  * @author Administrator
  *
  */

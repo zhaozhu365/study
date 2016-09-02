@@ -16,7 +16,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * @ClassName: ExecutorAndFuture
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年6月1日 下午5:32:19
  * 
  */

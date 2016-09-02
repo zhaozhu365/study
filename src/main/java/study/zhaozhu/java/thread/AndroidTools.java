@@ -12,7 +12,7 @@ package study.zhaozhu.java.thread;
 /** 
 * @ClassName: AndroidTools 
 * @Description: TODO(这里用一句话描述这个类的作用) 
-* @author zhaozhu@luobotec.com
+* @author zhaozhu
 * @date 2016年6月7日 下午1:59:55 
 *  
 */

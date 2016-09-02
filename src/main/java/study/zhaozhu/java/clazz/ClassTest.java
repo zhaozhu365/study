@@ -11,7 +11,7 @@ package study.zhaozhu.java.clazz;
 /** 
 * @ClassName: ClassTest 
 * @Description: TODO(这里用一句话描述这个类的作用) 
-* @author zhaozhu@luobotec.com
+* @author zhaozhu
 * @date 2016年7月27日 下午5:41:28 
 *  
 */

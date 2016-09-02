@@ -11,7 +11,7 @@ package study.zhaozhu.java.break_for;
 /**
  * @ClassName: TestBreakInSwitch
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年6月14日 上午9:58:33
  * 
  */

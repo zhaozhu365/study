@@ -11,7 +11,7 @@ package study.zhaozhu.java.character;
 /** 
 * @ClassName: TestCharsequence 
 * @Description: TODO(这里用一句话描述这个类的作用) 
-* @author zhaozhu@luobotec.com
+* @author zhaozhu
 * @date 2016年7月4日 上午9:43:44 
 *  
 */

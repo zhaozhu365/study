@@ -11,7 +11,7 @@ package study.zhaozhu.java.return_;
 /**
  * @ClassName: TestReturn
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年6月12日 上午10:26:01
  * 
  */

@@ -2,6 +2,14 @@ package study.zhaozhu.written_examination;
 
 import java.util.Scanner;
 
+/**
+ * 输出蛇形矩阵
+* @ClassName: TestPrintSnake 
+* @Description: TODO
+* @author zhaozhu
+* @date 2016年9月2日 上午10:59:03 
+*
+ */
 public class TestPrintSnake {
 	public static void main(String[] args) {
 		//Scanner sc = new Scanner(System.in);

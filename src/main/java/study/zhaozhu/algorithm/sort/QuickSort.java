@@ -11,7 +11,7 @@ package study.zhaozhu.algorithm.sort;
 /**
  * @ClassName: QuickSort
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年8月25日 下午6:04:16
  * 
  */
@@ -37,8 +37,8 @@ public class QuickSort {
 	public static void originQuickSort(int[] s, int l, int r) {
 		if (l < r) {
 			int i = AdjustArray(s, l, r);// 先用挖坑填数法调整s[] | 一趟排序
-			originQuickSort(s, l, i - 1);// 递归调用,对一趟排序后的右边进行排序
-			originQuickSort(s, i + 1, r);// 递归调用,对一趟排序后的左边进行排序
+			originQuickSort(s, l, i - 1);// 递归调用,对一趟排序后的左边进行排序
+			originQuickSort(s, i + 1, r);// 递归调用,对一趟排序后的右边进行排序
 		}
 	}
 

@@ -1,5 +1,13 @@
 package study.zhaozhu.java.provider;
 
+/**
+ * //测试String.fomat占位符
+* @ClassName: projection 
+* @Description: TODO
+* @author zhaozhu
+* @date 2016年9月2日 上午11:12:36 
+*
+ */
 public class projection {
 	public static void main(String[] args) {
 		
@@ -7,6 +15,7 @@ public class projection {
 //		String count = String.format("COUNT(%s) as %s", "name", "_COUNT");
 //		
 //		System.out.println(count);
+		
 		
 		String str=null;
         str=String.format("Hi,%s", "王力");

@@ -11,7 +11,7 @@ package study.zhaozhu.java.break_for;
 /**
  * @ClassName: TestBreakLabel
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年8月25日 上午10:34:05
  * 
  */

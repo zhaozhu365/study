@@ -11,7 +11,7 @@ package study.zhaozhu.java.string;
 /** 
 * @ClassName: TestString 
 * @Description: TODO(这里用一句话描述这个类的作用) 
-* @author zhaozhu@luobotec.com
+* @author zhaozhu
 * @date 2016年6月2日 下午7:23:20 
 *  
 */

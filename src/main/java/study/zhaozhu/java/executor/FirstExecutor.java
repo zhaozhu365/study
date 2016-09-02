@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @ClassName: FirstExecutor
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年6月1日 上午10:15:42
  * 
  */

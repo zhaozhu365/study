@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * @ClassName: SortByLength
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年7月26日 下午6:19:09
  * 
  */

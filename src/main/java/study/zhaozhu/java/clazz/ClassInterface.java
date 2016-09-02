@@ -16,7 +16,7 @@ import java.lang.reflect.Modifier;
 /**
  * @ClassName: ClassInterface
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年7月20日 下午8:32:36
  * 
  */

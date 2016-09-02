@@ -3,6 +3,7 @@ package study.zhaozhu.written_examination;
 import java.util.Scanner;
 
 /**
+ * 网易2016校招笔试：将字符串2插入到字符串1中,并判断新字符串有多少是回文串
  * stringbuilder 的insert和reverse方法
  * @author Administrator
  *

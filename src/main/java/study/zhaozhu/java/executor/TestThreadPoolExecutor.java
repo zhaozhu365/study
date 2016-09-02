@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @ClassName: TestThreadPoolExecutor
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年6月1日 下午4:30:34
  * 
  */

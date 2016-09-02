@@ -18,7 +18,7 @@ import java.io.IOException;
 /**
  * @ClassName: FileTest1
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年5月24日 上午11:25:54
  * 
  */

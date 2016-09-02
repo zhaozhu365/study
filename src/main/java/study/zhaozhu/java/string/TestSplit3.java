@@ -11,7 +11,7 @@ package study.zhaozhu.java.string;
 /**
  * @ClassName: TestSplit3
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年6月27日 上午11:22:59
  * 
  */

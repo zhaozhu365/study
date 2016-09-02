@@ -11,7 +11,7 @@ package study.zhaozhu.written_examination.java_manual;
 /**
  * @ClassName: BinarySearch
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年8月25日 下午4:49:46
  * 
  */

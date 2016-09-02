@@ -18,7 +18,7 @@ import org.elasticsearch.common.transport.InetSocketTransportAddress;
 /**
  * @ClassName: FirstElasticSearch
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年7月1日 下午4:25:07
  * 
  */

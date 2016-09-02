@@ -11,7 +11,7 @@ package study.zhaozhu.algorithm.sort;
 /**
  * @ClassName: FindKinN
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年8月25日 下午7:53:51
  * 
  */

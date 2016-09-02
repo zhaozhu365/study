@@ -13,7 +13,7 @@ import java.util.concurrent.FutureTask;
 /** 
 * @ClassName: TestFutureTast 
 * @Description: TODO(这里用一句话描述这个类的作用) 
-* @author zhaozhu@luobotec.com
+* @author zhaozhu
 * @date 2016年6月2日 下午3:20:01 
 *  
 */

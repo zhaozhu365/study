@@ -11,7 +11,7 @@ package study.zhaozhu.java.clazz;
 /**
  * @ClassName: ReflectFactory
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年7月22日 下午2:52:27
  * 
  */

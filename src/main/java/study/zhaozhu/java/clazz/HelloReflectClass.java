@@ -12,7 +12,7 @@ import java.lang.reflect.Constructor;
 /**
  * @ClassName: FirstClass
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @author zhaozhu@luobotec.com
+ * @author zhaozhu
  * @date 2016年7月20日 下午4:10:39
  * 
  */

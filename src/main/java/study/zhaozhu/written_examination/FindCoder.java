@@ -8,35 +8,95 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+/**
+ * 
+ * <p>
+ * 1,从一组字符串数组中寻找所有包含coder的字符串,并生成返回数组
+ * <p>
+ * 2,返回格式,按照coder出现的次数排序
+ * 
+ * @ClassName: FindCoder
+ * @Description: TODO
+ * @author zhaozhu
+ * @date 2016年9月2日 上午10:57:08
+ *
+ */
 public class FindCoder {
 	public static void main(String[] args) {
-		
+
 		final String regex = "coder";
-		
+
 		String s1 = "coder";
 		String s2 = "codercoder";
 		String s3 = "im a codercoder";
 		String s4 = "im a code";
-		
-		
-//		System.out.println(s1.split(regex).length);
-//		System.out.println(s2.split(regex).length);
-//		System.out.println(s3.split(regex).length);
-//		
-//		s1.indexOf(regex);
-		
-		String[] ss = {s1, s2, s3, s4};
-		
-		String[] ss2 = {"coder","tsfncoderfykdqcoderysjcodermrrscodermrcoderthswcodernicoderdjfcoderitktccoderavqtcoderkcoderjmdacoderncoderxzksacoderncoderlmxhcodereyuzcoder","bjcodermqkgacoderbbacoderykcoderycoderutmlscodercxecoderkcodergcoderunsrcoderkhcoderzcoderaafcoderayvcoderkzjcoderacoderacoderrcoderibpycoder","jvcoderhcoderblcoderyjcoderaoycodersadxccodermxrcoderkbmyncoderfocoderqcoder","qfpcodermcoderyjftcoderfghfcoderocoderuxcoderblngccoderpjshcoderjyprcoderkcoderprucodersumcoder","ihcoderfawecodertpvmfcoderxcoderjbdcoderqcoderpfcaqcoder","nycoder","ffgicoderxecoderpqzcoderwjcoder","yjscoderbcoderahncodercrbzcoderfvetcodergmzpqcoderqzeocoderdmpcoderqqajcoderhhjacoderpcoderwycoderpyzcoder","csbcoder","znpcoderwfcoderbhcodertygmcoderzccoderglwtlcoderekcoderpjvvcoderfucodervhcoderlgqlkcoderhzasfcoderacoderlgnycoderslrdqcoderknbbcoderzdexcoderbmapocodercivvcoder","wwcoderwcoderzcodericoderyhcoderojldcoderzitcoder","bcoderpbbecoderccoderikcoder","ciuwgcoderlwecodergcoderubfccodersrgscoderbjbeacodergyvcodertqccoder","lnmgcoderatcoderofcoderbjcoder","itqocoderbatccoderxfnajcoderhlicoderltmocoderchrncodernzcoderlkgucoderucoderrkakqcoderiezcoderrucoderccodernkicoder","nlxuocoderiwcoderoacjcoderoncodergdpmcoderkldbrcoderlxfjwcoderzhcoderzfecodertcoderrmcodercrjcodericoderqquazcodereowmcodergrjcoderpqaaucodergbhvrcoder","sjecoderuudacoderkntcoderjmdncoderbrcoderopqcoderaqcoderwcoderpcoderiycoderuwcoderecoderxubncoderhkbcodersxjcoderykwldcoderqwagcoderwcodervfcoderucoder","prcoderroobcoderpellcoderfycoderzcoderycoderbmwucoderbzbhcoderypqwscoderincodergapycoderzfcoderuocoderqdxrcoderlnihjcoderkcoder","qcoderfufjocoderntsrjcoder","kzjbwcoderxkrohcodermnjcodermsvmcoderbgcoderjqiuhcoder","swfcoderjycoderrjdgpcoder","nhzwcoderqlbmcoderwqqecodertkgdwcoderbcoderbpscodersvcoderyiikcoder","jcoderfyvycoderxxcoderucoderrcoderxuublcoderuncoderecoderdehycodergqgycodervcoderqcodertvjpbcoderbcoderhecoderecoder","ccoderlftwcoderjoffcodercviecoderczcodervliucoderkkubcoderrwrmcoderpcoderpcoderbspucodercwcoderfgeozcodercgiqhcoderkcoderunmccoderecoderpcoderjcodergcoder","tkcoderlecoderlszcoder","dxrvcoderugkcoderxpfmcodernsvdrcodercpooxcoderfxcoderqdocoderivjigcoderjvcoderqpcoderqfbcoder","htdecoderrvcoderrcoderudnljcodervsicoderglrmcoderrcoderpfscoderiltvscoderxpkijcodertcoderwcodertqwswcoderqoopcoderjcsyacodermdjcoderhsxkcodernlcoderjbvcoder","mvkwcoderileitcodereyqcoderpwpzcoderuzcodertlqzcoderepxucoderdzaucoderezcoderjcacoderycoder","icodercozcoderhcoderrwmndcodernyocgcoderbhpbcoderkdghbcoderiscoderkbrqncoderqcoder","wnytccoder","pucodervcoderuwzqcoderqlcoderxecoderhamcoderqclgfcoderhcoderoicoderxcoderamlfbcoder","kkcoderjpvjcoderucoderfecoderrcoderxhxicoder","wqhhcoderpjfcoderncoderbcccoderzwyedcoderheqcoderuacoderaifrbcoderxcoderwcocodertlzscodernrdxncoderuhfeacoderdvcoderhjleicoderpcoderbbgcoderrvypicoderdpcoder","apcoderqpyycodereahpcodernwghkcoderntcoderykcodergpoxcoderpgwcodernqwbcoderjdddicoderbgknkcoder","vgvcoderudncoderikpexcoder","cjecoderykhcoderoybtcoderdbdppcoderxxdqcoderhduqhcoderevibcoderffvsqcoderkzcoderkcoderddltcoder","ipdicodernnecodermcoderhfajrcodergogcoderfcodercdghfcoderdcodertixqcodervcoderhcwcoderkccoderohygccoderhcodercecoderpxcoderzcoderucoder","oicodertcycoderlvwqwcoderkefcoderwfrcoderoorcoderhawcodertuxtrcoderolpcodericoderwzlcoderhxicoderxcoderhcoderbmfifcodernabcodertcoderxpqcoder","dcoderkzbykcoderbcoderwuxrocoderamqhgcodertfzvcodermicoderjcoderjccjfcoder","vzcoderluvthcoderawavcoder","mpsbcoderehqcodercmcodervfiwicoderyduxzcoderebyvfcodermnkjhcoderslzlcoderfbcoderyrgvecoderetcodervxcoderncdsccoderpscoder","zhcodermzcoderxwyecoderjbhvdcoderzzvzcoderxrcoder","lzncoderjrlcoderdcoderdrcoderqyjcoderymdcodereywcoderymrcoder","jcoderindrfcoderecoderilqpcoderyucoderppjzcoderhcoderocoderhcodertcodermpyscoder","ncoderawjcycoderkcoderoiycoderspbxcoderalunccodersqcoderhodmbcoderktcoder","xcodermnixicodergcoderiomcoderhhpcoderkccoderocodernuracoderrzccoderyhstcoderbqxcodercxjowcodergvcoderlxpcoderiucodersixdcodermscoderhcoderktkpcodervovgtcoder","yrsincoderksxyfcoderqdcoderqxunfcoderdmmcoderzcoderwqcacoder","cjicoderxcoderukdcoderjihqrcodermzrglcoderncoderchlocoderfcoderwlcoderxsypcoderjcoderwrxcoder","hacodershniacoder","ycoderycoderniadncoderajscoderdcodermcoderycoderzhcoderkepowcoder","ztcoderkiruycodertglncoderzcoderoafcoderuvbhcodervbicoderkpkppcoderqcoder","fdcoderopnspcoderxghcodericoderpcoder","omptlcoderfxcoderjvecoderpudlqcoderzpjcoderxccodersnhcoderscoderpaucoderocoderytcoder","rcoderascoderjcoderzhsrccoderjccodereanxbcodergqajcoderggwpmcoderxcoderordcocoder","kcoderdcoderdmffycoderbkzxcoderojcoderilcoderucoderdypkdcoder","zmbyucoderzhcodermhsbicoderwjecoderqwmqjcoderitzwcoderebhcoderandiucoderpiajcoderyycoderznbhfcoder","vslcoderzjscodervxftcoderfjygcodermvcoderdhncodergpnvcoderbecoderkhcoderfnecoderjveqcoderacoderemwcoderthgvcoderqewcoderljufbcoderynpecoderxlpcoder"};
+
+		// System.out.println(s1.split(regex).length);
+		// System.out.println(s2.split(regex).length);
+		// System.out.println(s3.split(regex).length);
+		//
+		// s1.indexOf(regex);
+
+		String[] ss = { s1, s2, s3, s4 };
+
+		String[] ss2 = { "coder",
+				"tsfncoderfykdqcoderysjcodermrrscodermrcoderthswcodernicoderdjfcoderitktccoderavqtcoderkcoderjmdacoderncoderxzksacoderncoderlmxhcodereyuzcoder",
+				"bjcodermqkgacoderbbacoderykcoderycoderutmlscodercxecoderkcodergcoderunsrcoderkhcoderzcoderaafcoderayvcoderkzjcoderacoderacoderrcoderibpycoder",
+				"jvcoderhcoderblcoderyjcoderaoycodersadxccodermxrcoderkbmyncoderfocoderqcoder",
+				"qfpcodermcoderyjftcoderfghfcoderocoderuxcoderblngccoderpjshcoderjyprcoderkcoderprucodersumcoder",
+				"ihcoderfawecodertpvmfcoderxcoderjbdcoderqcoderpfcaqcoder", "nycoder",
+				"ffgicoderxecoderpqzcoderwjcoder",
+				"yjscoderbcoderahncodercrbzcoderfvetcodergmzpqcoderqzeocoderdmpcoderqqajcoderhhjacoderpcoderwycoderpyzcoder",
+				"csbcoder",
+				"znpcoderwfcoderbhcodertygmcoderzccoderglwtlcoderekcoderpjvvcoderfucodervhcoderlgqlkcoderhzasfcoderacoderlgnycoderslrdqcoderknbbcoderzdexcoderbmapocodercivvcoder",
+				"wwcoderwcoderzcodericoderyhcoderojldcoderzitcoder", "bcoderpbbecoderccoderikcoder",
+				"ciuwgcoderlwecodergcoderubfccodersrgscoderbjbeacodergyvcodertqccoder",
+				"lnmgcoderatcoderofcoderbjcoder",
+				"itqocoderbatccoderxfnajcoderhlicoderltmocoderchrncodernzcoderlkgucoderucoderrkakqcoderiezcoderrucoderccodernkicoder",
+				"nlxuocoderiwcoderoacjcoderoncodergdpmcoderkldbrcoderlxfjwcoderzhcoderzfecodertcoderrmcodercrjcodericoderqquazcodereowmcodergrjcoderpqaaucodergbhvrcoder",
+				"sjecoderuudacoderkntcoderjmdncoderbrcoderopqcoderaqcoderwcoderpcoderiycoderuwcoderecoderxubncoderhkbcodersxjcoderykwldcoderqwagcoderwcodervfcoderucoder",
+				"prcoderroobcoderpellcoderfycoderzcoderycoderbmwucoderbzbhcoderypqwscoderincodergapycoderzfcoderuocoderqdxrcoderlnihjcoderkcoder",
+				"qcoderfufjocoderntsrjcoder", "kzjbwcoderxkrohcodermnjcodermsvmcoderbgcoderjqiuhcoder",
+				"swfcoderjycoderrjdgpcoder", "nhzwcoderqlbmcoderwqqecodertkgdwcoderbcoderbpscodersvcoderyiikcoder",
+				"jcoderfyvycoderxxcoderucoderrcoderxuublcoderuncoderecoderdehycodergqgycodervcoderqcodertvjpbcoderbcoderhecoderecoder",
+				"ccoderlftwcoderjoffcodercviecoderczcodervliucoderkkubcoderrwrmcoderpcoderpcoderbspucodercwcoderfgeozcodercgiqhcoderkcoderunmccoderecoderpcoderjcodergcoder",
+				"tkcoderlecoderlszcoder",
+				"dxrvcoderugkcoderxpfmcodernsvdrcodercpooxcoderfxcoderqdocoderivjigcoderjvcoderqpcoderqfbcoder",
+				"htdecoderrvcoderrcoderudnljcodervsicoderglrmcoderrcoderpfscoderiltvscoderxpkijcodertcoderwcodertqwswcoderqoopcoderjcsyacodermdjcoderhsxkcodernlcoderjbvcoder",
+				"mvkwcoderileitcodereyqcoderpwpzcoderuzcodertlqzcoderepxucoderdzaucoderezcoderjcacoderycoder",
+				"icodercozcoderhcoderrwmndcodernyocgcoderbhpbcoderkdghbcoderiscoderkbrqncoderqcoder", "wnytccoder",
+				"pucodervcoderuwzqcoderqlcoderxecoderhamcoderqclgfcoderhcoderoicoderxcoderamlfbcoder",
+				"kkcoderjpvjcoderucoderfecoderrcoderxhxicoder",
+				"wqhhcoderpjfcoderncoderbcccoderzwyedcoderheqcoderuacoderaifrbcoderxcoderwcocodertlzscodernrdxncoderuhfeacoderdvcoderhjleicoderpcoderbbgcoderrvypicoderdpcoder",
+				"apcoderqpyycodereahpcodernwghkcoderntcoderykcodergpoxcoderpgwcodernqwbcoderjdddicoderbgknkcoder",
+				"vgvcoderudncoderikpexcoder",
+				"cjecoderykhcoderoybtcoderdbdppcoderxxdqcoderhduqhcoderevibcoderffvsqcoderkzcoderkcoderddltcoder",
+				"ipdicodernnecodermcoderhfajrcodergogcoderfcodercdghfcoderdcodertixqcodervcoderhcwcoderkccoderohygccoderhcodercecoderpxcoderzcoderucoder",
+				"oicodertcycoderlvwqwcoderkefcoderwfrcoderoorcoderhawcodertuxtrcoderolpcodericoderwzlcoderhxicoderxcoderhcoderbmfifcodernabcodertcoderxpqcoder",
+				"dcoderkzbykcoderbcoderwuxrocoderamqhgcodertfzvcodermicoderjcoderjccjfcoder",
+				"vzcoderluvthcoderawavcoder",
+				"mpsbcoderehqcodercmcodervfiwicoderyduxzcoderebyvfcodermnkjhcoderslzlcoderfbcoderyrgvecoderetcodervxcoderncdsccoderpscoder",
+				"zhcodermzcoderxwyecoderjbhvdcoderzzvzcoderxrcoder",
+				"lzncoderjrlcoderdcoderdrcoderqyjcoderymdcodereywcoderymrcoder",
+				"jcoderindrfcoderecoderilqpcoderyucoderppjzcoderhcoderocoderhcodertcodermpyscoder",
+				"ncoderawjcycoderkcoderoiycoderspbxcoderalunccodersqcoderhodmbcoderktcoder",
+				"xcodermnixicodergcoderiomcoderhhpcoderkccoderocodernuracoderrzccoderyhstcoderbqxcodercxjowcodergvcoderlxpcoderiucodersixdcodermscoderhcoderktkpcodervovgtcoder",
+				"yrsincoderksxyfcoderqdcoderqxunfcoderdmmcoderzcoderwqcacoder",
+				"cjicoderxcoderukdcoderjihqrcodermzrglcoderncoderchlocoderfcoderwlcoderxsypcoderjcoderwrxcoder",
+				"hacodershniacoder", "ycoderycoderniadncoderajscoderdcodermcoderycoderzhcoderkepowcoder",
+				"ztcoderkiruycodertglncoderzcoderoafcoderuvbhcodervbicoderkpkppcoderqcoder",
+				"fdcoderopnspcoderxghcodericoderpcoder",
+				"omptlcoderfxcoderjvecoderpudlqcoderzpjcoderxccodersnhcoderscoderpaucoderocoderytcoder",
+				"rcoderascoderjcoderzhsrccoderjccodereanxbcodergqajcoderggwpmcoderxcoderordcocoder",
+				"kcoderdcoderdmffycoderbkzxcoderojcoderilcoderucoderdypkdcoder",
+				"zmbyucoderzhcodermhsbicoderwjecoderqwmqjcoderitzwcoderebhcoderandiucoderpiajcoderyycoderznbhfcoder",
+				"vslcoderzjscodervxftcoderfjygcodermvcoderdhncodergpnvcoderbecoderkhcoderfnecoderjveqcoderacoderemwcoderthgvcoderqewcoderljufbcoderynpecoderxlpcoder" };
 		for (String s : quna2.findCoder(ss2, 58)) {
 			System.out.println(s);
 		}
-		
-		
+
 	}
-	
-	
-	
+
 }
 
 class quna2 {
@@ -49,9 +109,9 @@ class quna2 {
 			if (A[i].toLowerCase().contains(coder)) {
 				String temp = A[i].toLowerCase();
 				int start = 0;
-				while (temp.indexOf(coder,start)>=0 && start<temp.length()) {
+				while (temp.indexOf(coder, start) >= 0 && start < temp.length()) {
 					count++;
-					start = temp.indexOf(coder,start) + coder.length();
+					start = temp.indexOf(coder, start) + coder.length();
 				}
 				map.put(i, count);
 			}
