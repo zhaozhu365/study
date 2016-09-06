@@ -1,9 +1,8 @@
 /**   
 * @Title: QuickSort.java 
 * @Description: TODO
-* @author zhaozhu@luobotec.com
+* @author zhaozhu
 * @date 2016年8月25日 下午6:04:16 
-* @powered by 北京萝卜科技有限公司
 * @version V1.0   
 */
 package study.zhaozhu.algorithm.sort;
