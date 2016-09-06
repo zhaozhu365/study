@@ -12,7 +12,7 @@ package study.zhaozhu.java.bit;
  */
 public class IntToBinary {
 	public static void main(String[] args) {
-		int n = 100;
+		int n = 100, m = 100;
 		// 这样是倒着输出
 		// 如果要正着输出,则将数保存在一个数组中,倒叙输出即可
 		while (n != 0) {
@@ -21,7 +21,7 @@ public class IntToBinary {
 		}
 
 		// Integer.toBinary的实现
-		Integer.toBinaryString(n);
+		System.out.println(Integer.toBinaryString(m));
 
 	}
 }
