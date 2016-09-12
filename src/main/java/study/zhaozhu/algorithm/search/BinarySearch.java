@@ -19,8 +19,11 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 3, 4, 6, 7, 8, 9, 10 };
 
-		System.out.println(binarySearch(arr, 6));
-		System.out.println(binarySearch(arr, 5));
+		//System.out.println(binarySearch(arr, 6));
+		//System.out.println(binarySearch(arr, 5));
+		
+		double x = 3/2 +1;
+		System.out.println(x);
 
 	}
 
