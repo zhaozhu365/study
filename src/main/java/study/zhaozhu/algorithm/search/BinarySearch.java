@@ -72,4 +72,26 @@ public class BinarySearch {
 		return false;
 	}
 
+	static int binarySearch3(int[] arr, int value) {
+		int low = 0;
+		int height = arr.length - 1;
+		int mid;
+		while (low <= height) {
+			mid = (low + height) / 2;
+			if (arr[mid] == value) {
+				System.out.println("在第" + mid + "位置找到" + value);
+				return mid;
+			} else {
+				if (arr[mid] > value) {
+					height = mid - 1;
+				} else {
+					low = mid + 1;
+				}
+			}
+		}
+
+		System.out.println("没有找到" + value);
+		return -1;
+	}
+	
 }
