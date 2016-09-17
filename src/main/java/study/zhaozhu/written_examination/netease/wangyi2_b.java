@@ -17,45 +17,14 @@ public class wangyi2_b {
 		}
 	}
 
-
-	static int f(int x) {
-		if ((x & 1) == 1) {
-			return x;
-		}
-		double sqrt = Math.sqrt(x);
-		int k = (int) Math.floor(sqrt);
-		int up = (int) Math.ceil(sqrt);
-
-		if ((k & 1) == 1) {
-			return k;
-		} else {
-			if (k == up)
-				return f(k);
-			else {
-				return f(x >> 1);
-			}
-		}
-	}
-
 	static int getsum(int n) {
-		int m = 0;
-		int maxj = 0;
-		int t = 0;
-		if ((n & 1) == 0) {
-			m = n >> 1;
-			maxj = n - 1;
-			t = n;
+		if (n == 1) {
+			return 1;
+		}
+		if (n % 2 == 0) {
+			return getsum(n / 2) + n * n / 4;
 		} else {
-			m = n >> 1 + 1;
-			maxj = n;
-			t = n - 1;
+			return getsum(n - 1) + n;
 		}
-		int sum = (1 + maxj) * (m >> 2);
-		for (int i = 2; i <= t; i = i + 2) {
-			sum += f(i);
-
-		}
-		return sum;
 	}
-
 }

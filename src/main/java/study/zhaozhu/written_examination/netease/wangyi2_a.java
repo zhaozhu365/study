@@ -36,7 +36,6 @@ public class wangyi2_a {
 		// long t2 = System.currentTimeMillis();
 		// long t3 = t2 - t1;
 		// sqrtTime += t3;
-
 		if ((k & 1) == 1) {
 			return k;
 		} else {
@@ -46,7 +45,6 @@ public class wangyi2_a {
 				return f(x >> 1);
 			}
 		}
-
 	}
 
 	static int getsum(int n) {
@@ -65,9 +63,8 @@ public class wangyi2_a {
 		int sum = (1 + maxj) * (m >> 2);
 		for (int i = 2; i <= t; i = i + 2) {
 			sum += f(i);
-
 		}
 		return sum;
 	}
-
+	
 }

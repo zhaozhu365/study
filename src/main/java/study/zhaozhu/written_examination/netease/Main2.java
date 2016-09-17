@@ -1,4 +1,4 @@
-package study.zhaozhu.written_examination;
+package study.zhaozhu.written_examination.netease;
 
 import java.util.Scanner;
 
